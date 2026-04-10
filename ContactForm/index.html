@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ContactForm</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="container container--flex-column">
+            <img class="header__logo" src="./images/Vector.svg" alt="Logotipo do ContactForm">
+            <h1 class="header__title">Contact Form</h1>
+            <p class="header__text">Insira o dados do contato e clique em cadatrar!</p>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <form class="contact-form" action="">
+                <div class="contact-form__linha">
+                    <div class="contact-form__col-a">
+                        <label class="contact-form__label" for="nome">Nome:</label>
+                    </div>
+                    <div class="contact-form__col-b">
+                        <input class="contact-form__input contact-form__input--metade .contact-form__input:focus"
+                            name="nome" id="nome" type="text" placeholder="Nome">
+                        <input class="contact-form__input contact-form__input--metade .contact-form__input:focus"
+                            name="sobrenome" id="sobrenome" type="text" placeholder="Sobrenome">
+                    </div>
+                </div>
+                <div class="contact-form__linha">
+                    <div class="contact-form__col-a">
+                        <label class="contact-form__label" for="email">E-mail:</label>
+                    </div>
+                    <div class="contact-form__col-b">
+                        <input class="contact-form__input contact-form__input--maximo" name="email" id="email"
+                            type="email" placeholder="E-mail">
+                    </div>
+                </div>
+                <div class="contact-form__linha">
+                    <div class="contact-form__col-a">
+                        <label class="contact-form__label" for="algo">Telefone</label>
+                    </div>
+                    <div class="contact-form__col-b">
+                        <input class="contact-form__input   contact-form__input--tres" name="Telefone" id="Telefone"
+                            type="Telefone" placeholder="+55">
+                        <input class="contact-form__input contact-form__input--tres" name="Telefone" id="Telefone"
+                            type="Telefone" placeholder="DDD">
+                        <input class="contact-form__input contact-form__input--tres" name="Telefone" id="Telefone"
+                            type="Telefone" placeholder="Ex: 99999-9999">
+                    </div>
+                </div>
+                <div class="contact-form__linha">
+                    <div class="contact-form__col-a">
+                        <label class="contact-form__label" for="algo">Endereço</label>
+                    </div>
+                    <div class="contact-form__col-b">
+                        <input class="contact-form__input contact-form__input--dois" name="endereco" id="endereco"
+                            type="text" placeholder="Cep:9999-999">
+                        <input class="contact-form__input contact-form__input--metade" name="endereco" id="endereco"
+                            type="text" placeholder="Rua lá De Casa">
+                        <input class="contact-form__input contact-form__input--tres" name="endereco" id="endereco"
+                            type="text" placeholder="Ex: 555">
+                    </div>
+                </div>
+                <div class="contact-form__linha">
+                    <div class="contact-form__col-a">
+                        <label class="contact-form__label" for="algo"></label>
+                    </div>
+                    <div class="contact-form__col-b">
+                        <input class="contact-form__input   contact-form__input--tres" name="Telefone" id="Telefone"
+                            type="Telefone" placeholder="Apto. 12 Bloco X">
+                        <input class="contact-form__input contact-form__input--tres" name="Telefone" id="Telefone"
+                            type="Telefone" placeholder="Bairro">
+                        <input class="contact-form__input contact-form__input--tres" name="Telefone" id="Telefone"
+                            type="Telefone" placeholder="Cidade">
+                    </div>
+                </div>
+                <div class="contact-form__linha">
+                    <div class="contact-form__col-a">
+                        <label class="contact-form__label" for="algo"></label>
+                    </div>
+                    <div class="contact-form__col-b">
+                        <input class="contact-form__input contact-form__input--tres" name="Telefone" id="Telefone"
+                            type="Telefone" placeholder="Estado">
+            </form>
+        </div>
+    </main>
+</body>
+
+</html>

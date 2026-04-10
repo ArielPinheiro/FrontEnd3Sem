@@ -1,0 +1,31 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1 {
+    color: blueviolet;
+}
+
+img {
+    width: 250px;
+}
+
+@media screen and (max-width: 991px) {
+    h1 {
+        color: turquoise;
+        background-color: black;
+    }
+
+    img {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    img {
+        display: block;
+
+    }
+}
