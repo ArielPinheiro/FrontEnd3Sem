@@ -53,7 +53,8 @@ body {
 .contact-form {
     padding: 20px;
     width: auto;
-    height: auto;;
+    height: auto;
+    ;
     /* border: 1px solid #DED27C;*/
 }
 
@@ -121,7 +122,7 @@ body {
 .contact-form__label {
     font-family: 'Courier New', Courier, monospace;
     color: #ffffff;
-    font-weight: 500;
+    font-weight: 400;
 }
 
 .Textarea {
@@ -165,7 +166,34 @@ body {
 
 
 /*Tablet BreakPoint*/
-@media screen and (max-width: 991px) {}
+@media screen and (max-width: 991px) {
+    .container {
+        max-width: 740px;
+    }
+
+    .contact-form__label {
+        font-size: 70%;
+    }
+}
 
 /*Mobile BreakPoint*/
-@media screen and (max-width: 767px) {}
+@media screen and (max-width: 740px) {
+
+    .contact-form__label {
+        display: none;
+    }
+
+    .contact-form__input {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        gap: 10px;
+    }
+
+    .contact-form__col-b {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
