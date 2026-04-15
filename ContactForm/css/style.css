@@ -153,7 +153,7 @@ body {
     border-radius: 3px;
 }
 
-.contact-button__entrar {
+.contact-button__limpar {
     width: 350px;
     height: 45px;
     color: white;
@@ -195,5 +195,39 @@ body {
         flex-direction: column;
         justify-content: center;
         align-items: center;
+    }
+
+    .header__logo {
+        width: 80px;
+    }
+
+    .header__text {
+        font-size: 80%;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .contact-form__linha {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .contact-button {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 1px;
+    }
+
+    .contact-button__cadastro {
+        width: 90%;
+    }
+
+    .contact-button__limpar {
+        width: 90%;
     }
 }

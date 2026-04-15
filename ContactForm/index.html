@@ -46,12 +46,12 @@
                         <label class="contact-form__label" for="algo">Telefone:</label>
                     </div>
                     <div class="contact-form__col-b">
-                        <input class="contact-form__input   contact-form__input--tres" name="Telefone" id="Telefone"
-                            type="Telefone" placeholder="+55">
-                        <input class="contact-form__input contact-form__input--tres" name="Telefone" id="Telefone"
-                            type="Telefone" placeholder="DDD">
-                        <input class="contact-form__input contact-form__input--tres" name="Telefone" id="Telefone"
-                            type="Telefone" placeholder="Ex: 99999-9999">
+                        <input class="contact-form__input   contact-form__input--tres" name="numerointer"
+                            id="numerointer" type="text" placeholder="+55">
+                        <input class="contact-form__input contact-form__input--tres" name="DDD" id="DDD" type="text"
+                            placeholder="DDD">
+                        <input class="contact-form__input contact-form__input--tres" name="telefone" id="telefone"
+                            type="text" placeholder="Ex: 99999-9999">
                     </div>
                 </div>
                 <div class="contact-form__linha">
@@ -59,11 +59,11 @@
                         <label class="contact-form__label" for="algo">Endereço:</label>
                     </div>
                     <div class="contact-form__col-b">
-                        <input class="contact-form__input contact-form__input--dois" name="endereco" id="endereco"
-                            type="text" placeholder="Cep:9999-999">
-                        <input class="contact-form__input contact-form__input--metade" name="endereco" id="endereco"
-                            type="text" placeholder="Rua lá De Casa">
-                        <input class="contact-form__input contact-form__input--tres" name="endereco" id="endereco"
+                        <input class="contact-form__input contact-form__input--dois" name="cep" id="cep" type="text"
+                            placeholder="Cep:9999-999">
+                        <input class="contact-form__input contact-form__input--metade" name="rua" id="rua" type="text"
+                            placeholder="Rua lá De Casa">
+                        <input class="contact-form__input contact-form__input--tres" name="numero" id="numero"
                             type="text" placeholder="Ex: 555">
                     </div>
                 </div>
@@ -72,12 +72,12 @@
                         <label class="contact-form__label" for="AP"></label>
                     </div>
                     <div class="contact-form__col-b">
-                        <input class="contact-form__input   contact-form__input--tres" name="AP" id="AP" type="AP"
+                        <input class="contact-form__input   contact-form__input--tres" name="AP" id="AP" type="text"
                             placeholder="Apto. 12 Bloco X">
-                        <input class="contact-form__input contact-form__input--tres" name="AP" id="AP" type="AP"
-                            placeholder="Bairro">
-                        <input class="contact-form__input contact-form__input--tres" name="AP" id="AP" type="AP"
-                            placeholder="Cidade">
+                        <input class="contact-form__input contact-form__input--tres" name="bairro" id="bairro"
+                            type="text" placeholder="Bairro">
+                        <input class="contact-form__input contact-form__input--tres" name="cidade" id="cidade"
+                            type="text" placeholder="Cidade">
                     </div>
                 </div>
                 <div class="contact-form__linha">
@@ -85,8 +85,8 @@
                         <label class="contact-form__label" for="algo"></label>
                     </div>
                     <div class="contact-form__col-b">
-                        <input class="contact-form__input contact-form__input--tres" name="Estado" id="Estado"
-                            type="Estado" placeholder="Estado">
+                        <input class="contact-form__input contact-form__input--tres" name="estado" id="estado"
+                            type="text" placeholder="Estado">
                     </div>
                 </div>
 
@@ -96,15 +96,81 @@
                         <label class="contact-form__label" for="AP">Anotações:</label>
                     </div>
                     <div class="contact-form__col-b">
-                        <textarea class="Textarea contact-form__input" name="Message" id="" placeholder="Escreva Algo"></textarea>
+                        <textarea class="Textarea contact-form__input" name="textarea" id="textarea"
+                            placeholder="Escreva Algo"></textarea>
                     </div>
                 </div>
                 <article class="contact-button">
-                    <button class="contact-button__cadastro contact-form__input" type="button" id="Cadastrar" name="Cadastrar">Cadastrar</button>
-                    <button class="contact-button__entrar contact-form__input" type="reset">Limpar</button>
+                    <button onclick="MinhaFuncao()" class="contact-button__cadastro contact-form__input" type="button"
+                        id="Cadastrar" name="Cadastrar">Cadastrar</button>
+                    <button onclick="alert('LIMPEI TUDINHO VAI TOMANDO!')"
+                        class="contact-button__limpar contact-form__input" type="reset">Limpar</button>
                 </article>
             </form>
         </div>
     </main>
+
+    <script>
+        function MinhaFuncao() {
+            let nome = document.getElementById("nome").value;
+            let sobrenome = document.getElementById("sobrenome").value;
+            let email = document.getElementById("email").value;
+            let telefone = document.getElementById("telefone").value;
+            let numeinter = document.getElementById("numerointer").value;
+            let numero = document.getElementById("numero").value;
+            let rua = document.getElementById("rua").value;
+            let estado = document.getElementById("estado").value;
+            let DDD = document.getElementById("DDD").value;
+            let cep = document.getElementById("cep").value;
+            let AP = document.getElementById("AP").value;
+            let bairro = document.getElementById("bairro").value;
+            let cidade = document.getElementById("cidade").value;
+
+            if (nome.length == 0) {
+                document.getElementById("nome").style.border = "1px solid red";
+                alert("Por favor, preencha o campo nome.");
+            } else if (sobrenome.length == 0) {
+                document.getElementById("sobrenome").style.border = "1px solid red";
+                alert("Por favor, preencha o campo sobrenome.");
+            } else if (email.length == 0) {
+                document.getElementById("email").style.border = "1px solid red";
+                alert("Por favor, preencha o campo email.");
+            } else if (numeinter.length == 0) {
+                document.getElementById("numerointer").style.border = "1px solid red";
+                alert("Por favor, preencha o campo número internacional.");
+            } else if (DDD.length == 0) {
+                document.getElementById("DDD").style.border = "1px solid red";
+                alert("Por favor, preencha o campo DDD.");
+            } else if (telefone.length == 0) {
+                document.getElementById("telefone").style.border = "1px solid red";
+                alert("Por favor, preencha o campo telefone.");
+            } else if (cep.length == 0) {
+                document.getElementById("cep").style.border = "1px solid red";
+                alert("Por favor, preencha o campo cep.");
+            } else if (rua.length == 0) {
+                document.getElementById("rua").style.border = "1px solid red";
+                alert("Por favor, preencha o campo rua.");
+            } else if (numero.length == 0) {
+                document.getElementById("numero").style.border = "1px solid red";
+                alert("Por favor, preencha o campo número.");
+            } else if (AP.length == 0) {
+                document.getElementById("AP").style.border = "1px solid red";
+                alert("Por favor, preencha o campo AP.");
+            } else if (bairro.length == 0) {
+                document.getElementById("bairro").style.border = "1px solid red";
+                alert("Por favor, preencha o campo bairro.");
+            } else if (cidade.length == 0) {
+                document.getElementById("cidade").style.border = "1px solid red";
+                alert("Por favor, preencha o campo cidade.");
+            } else if (estado.length == 0) {
+                document.getElementById("estado").style.border = "1px solid red";
+                alert("Por favor, preencha o campo estado.");
+            } else {
+                alert("Cadastrado com sucesso!");
+            }
+        }
+    </script>
+
 </body>
+
 </html>
