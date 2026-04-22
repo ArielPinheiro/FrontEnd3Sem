@@ -101,7 +101,7 @@
                     </div>
                 </div>
                 <article class="contact-button">
-                    <button onclick="MinhaFuncao()" class="contact-button__cadastro contact-form__input" type="button"
+                    <button onclick="validarFormulario()" class="contact-button__cadastro contact-form__input" type="button"
                         id="Cadastrar" name="Cadastrar">Cadastrar</button>
                     <button onclick="alert('LIMPEI TUDINHO VAI TOMANDO!')"
                         class="contact-button__limpar contact-form__input" type="reset">Limpar</button>
@@ -110,11 +110,11 @@
         </div>
     </main>
 
-    <script>
+    <!-- <script>
         function MinhaFuncao() {
             let nome = document.getElementById("nome").value;
             let sobrenome = document.getElementById("sobrenome").value;
-            let email = document.getElementById("email").value;
+            /*let email = document.getElementById("email").value;
             let telefone = document.getElementById("telefone").value;
             let numeinter = document.getElementById("numerointer").value;
             let numero = document.getElementById("numero").value;
@@ -124,12 +124,12 @@
             let cep = document.getElementById("cep").value;
             let AP = document.getElementById("AP").value;
             let bairro = document.getElementById("bairro").value;
-            let cidade = document.getElementById("cidade").value;
+            let cidade = document.getElementById("cidade").value;*/
 
             if (nome.length == 0) {
                 document.getElementById("nome").style.border = "1px solid red";
                 alert("Por favor, preencha o campo nome.");
-            } else if (sobrenome.length == 0) {
+            } /*else if (sobrenome.length == 0) {
                 document.getElementById("sobrenome").style.border = "1px solid red";
                 alert("Por favor, preencha o campo sobrenome.");
             } else if (email.length == 0) {
@@ -165,12 +165,12 @@
             } else if (estado.length == 0) {
                 document.getElementById("estado").style.border = "1px solid red";
                 alert("Por favor, preencha o campo estado.");
-            } else {
+            }*/ else {
                 alert("Cadastrado com sucesso!");
             }
         }
-    </script>
-
+    </script> -->
+<script src="js/script.js"></script>
 </body>
 
 </html>

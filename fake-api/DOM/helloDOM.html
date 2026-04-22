@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="uau.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1 id="titulo">Bem Vindo</h1>
+    <p>Hello DOM JS</p>
+    <button onmousedown="saudacao()">Clica</button>
+    <button onmouseover="saudacaoLegal()">Passe o mouse</button>
+    <button ondblclick="mouseClicadoDuasVezes()">Clica Duas Vezes</button>
+    <button onmouseup="saudacaoLegal()">Clica</button>
+    <button onmousedown="saudacao()">Clica</button>
+
+    <script>
+        alert(`titulo: ${document.getElementById("titulo").textContent}`);
+
+        //java é uma linguagem de programação case sensitive e tem uma sintaxe semelhante a outras linguagens de programação como C++ e C#.
+        function saudacao() {
+            alert('Andam dizendo que o tue é o demonio');
+        }
+        function saudacaoLegal() {
+            alert('Tudo que ele escreve te consome');
+        }
+        function mouseClicadoDuasVezes() {
+            alert('não vai se deixar levar é no detalhe que o diabo se esconde');
+        }
+    </script>
+</body>
+
+</html>
